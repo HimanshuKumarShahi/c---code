@@ -4,8 +4,9 @@ using namespace std;
 class people{
     private:
     char name[10];
-    int age;
+    int age,id;
     char address[20];
+
 
     public:
     void input();
@@ -18,12 +19,15 @@ void people::input(){
     cin>>age;
     cout<<"enter address:"<<endl;
     cin>>address;
+    cout<<"enter id no:"<<endl;
+    cin>>id;
 }
 
 void people::output(){
     cout<<"name is:"<<name<<endl;
     cout<<"age is:"<<age<<endl;
     cout<<"address is:"<<address<<endl;
+      cout<<"enter id no:"<<id<<endl;
     cout<<"\n";
 }
 int main(){
